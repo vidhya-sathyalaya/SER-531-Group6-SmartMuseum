@@ -11,13 +11,13 @@ http://localhost:8080/getArtistInfo?artId=g6sm:218
 http://localhost:8080/getArchitecture?artId=g6sm:218
 ```
 
-**SPARQL Queries**
--Endpoints : 
-Group6 Endpoint : http://ec2-3-20-236-248.us-east-2.compute.amazonaws.com:3030/g6smartmuseum
-DBPedia Endpoint : http://dbpedia.org/sparql
+**SPARQL Queries**<br>
+- Endpoints : <br>
+  Group6 Endpoint : http://ec2-3-20-236-248.us-east-2.compute.amazonaws.com:3030/g6smartmuseum <br>
+  DBPedia Endpoint : http://dbpedia.org/sparql
 
--Samples
-  -Query 1 : Get Art info given Art id( say g6sm:218)
+- Samples
+  - Query 1 : Get Art info given Art id( say g6sm:218)
   ```
   SELECT ?artist ?artistBio ?nationality ?gender ?born ?died
   WHERE {
@@ -31,7 +31,7 @@ DBPedia Endpoint : http://dbpedia.org/sparql
     g6sm:Died ?died.
   }
   ```
-  -Query 2 : Get Artist Info
+  - Query 2 : Get Artist Info
   ```
   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
   PREFIX g6sm: <http://www.semanticweb.org/admin/ontologies/2021/11/G6_SmartMuseumTour#>
@@ -51,7 +51,7 @@ DBPedia Endpoint : http://dbpedia.org/sparql
 
   ```
   
-  -Query 3 : Federated Query to get Architecture info from DBPedia
+  - Query 3 : Federated Query to get Architecture info from DBPedia
   
   ```
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
