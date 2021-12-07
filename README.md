@@ -21,7 +21,7 @@ http://localhost:8080/getArchitecture?artId=g6sm:218
   ```
   SELECT ?artist ?artistBio ?nationality ?gender ?born ?died
   WHERE {
-    g6sm:728 rdf:type g6sm:Artwork;
+    g6sm:218 rdf:type g6sm:Artwork;
     g6sm:made_by ?artist.
     ?artist rdf:type g6sm:Artist.
     ?artist g6sm:ArtistBio ?artistBio;
@@ -38,7 +38,7 @@ http://localhost:8080/getArchitecture?artId=g6sm:218
 
   SELECT ?name ?artistBio ?nationality ?gender ?born ?died
   WHERE {
-    g6sm:728 rdf:type g6sm:Artwork;
+    g6sm:218 rdf:type g6sm:Artwork;
     g6sm:made_by ?artist.
     ?artist rdf:type g6sm:Artist.
     ?artist g6sm:ArtistName ?name.
