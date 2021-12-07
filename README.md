@@ -19,17 +19,15 @@ http://localhost:8080/getArchitecture?artId=g6sm:218
 - Samples
   - Query 1 : Get Art info given Art id( say g6sm:218)
   ```
-  SELECT ?artist ?artistBio ?nationality ?gender ?born ?died
+  SELECT ?title ?year ?medium ?classification ?department
   WHERE {
-    g6sm:218 rdf:type g6sm:Artwork;
-    g6sm:made_by ?artist.
-    ?artist rdf:type g6sm:Artist.
-    ?artist g6sm:ArtistBio ?artistBio;
-    g6sm:Nationality ?nationality;
-    g6sm:Gender ?gender;
-    g6sm:Born ?born;
-    g6sm:Died ?died.
-  }
+        g6sm:218 rdf:type g6sm:Artwork;
+        g6sm:Title ?title;
+        g6sm:Date ?year;
+        g6sm:Medium ?medium;
+        g6sm:Classification ?classification;
+        g6sm:Department ?department.
+     }
   ```
   - Query 2 : Get Artist Info
   ```
